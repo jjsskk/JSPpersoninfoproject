@@ -15,7 +15,7 @@ public class PersonDAO {
 
     Connection conn = null;
     PreparedStatement stmt = null;
-    ResultSet rs = null;//
+    ResultSet rs = null;//hh
 
     private final String PERSON_INSERT = "insert into private_info (id, name, pwd, phone_num, address, gender, hobby_movie, hobby_health,hobby_sew, major, birth, content,photo) " +
             "values (?,?,?,?,?,?,?,?,?,?,?,?,?)";
