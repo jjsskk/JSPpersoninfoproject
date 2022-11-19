@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 72px;
+    aspect-ratio: auto 72 / 72;
+    height: 72px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+label, input[type=radio] {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-37-5 {
+    float: left;
+    width: 37.5%;
+    margin-top: 6px;
+}
+
+
+form {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#title {
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+sub {
+    display: inline-block;
+
+}
+
+fieldset {
+    width: 500px;
+    height: auto;
+
+    background-color: lightgoldenrodyellow;
+    border: 3px solid rgb(89, 117, 196);
+    border-radius: 10px;
+    margin: 40px;
+}
+
+input[type=text], input[type=password], select, input[type=date], #content {
+    font-size: 18px;
+    font: 100% Lucida Sans, Verdana;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+
+#id:focus, #pwd:focus, #name:focus, #phone:focus, #address:focus, #content:focus {
+    outline: 4px solid lightskyblue;
+    background-clip: padding-box;
+}
+
+#content {
+    width: 100%;
+}
+
+input[type=submit] {
+    float: left;
+
+}
+
+#delete{
+    float: left;
+    margin-left: 5%;
+}
+#cancel{
+    float:right;
+}
+input[type=submit], input[type=button] {
+    color: #fff;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+    background-color: #007bff;
+    border-color: #007bff;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    width: 30%;
+
+    padding: .5rem 1rem;
+    user-select: none;
+    transition: background-color .15s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+input[type=submit]:hover, input[type=button]:hover {
+    background-color: #0007bf;
+}
+input[type=file]{
+    height:50px;
+    width:100%
+
+
+}
+.photo{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 700px) {
+    .col-25, .col-75, .col-37-5 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    fieldset {
+        width: 300px;
+        margin: 0;
+    }
+}
